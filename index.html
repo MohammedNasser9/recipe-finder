@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe Finder</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- ================= Header Section ================= -->
+    <header>
+      <h1>
+        <i class="fas fa-utensils"></i> Recipe Finder
+      </h1>
+      <p>Find delicious recipes from around the world</p>
+
+      <!-- API Credit -->
+      <div id="data-api">
+        Data from 
+        <a href="https://www.themealdb.com/api.php">TheMealDB</a>
+      </div>
+
+      <!-- Search Input & Button -->
+      <div class="search-container">
+        <input type="search" id="search-input" placeholder="Search for meals" />
+        <button id="search-btn">Search</button>
+      </div>
+    </header>
+
+    <!-- ============== Error Message ============== -->
+    <div id="error-container" class="hidden"></div>
+
+    <!-- ============== Search Result Title ============== -->
+    <div id="search-result"></div>
+
+    <!-- ============== Meals Grid ============== -->
+    <div class="meals" id="meals-wrapper">
+      <!-- Dynamic meals will be injected here -->
+    </div>
+
+    <!-- ============== Meal Details Section ============== -->
+    <div id="meal-details" class="hidden">
+      <!-- Back Button -->
+      <button id="back-btn">
+        <i class="fa-solid fa-arrow-left"></i>
+        Back to recipes
+      </button>
+
+      <!-- Dynamic Meal Content -->
+      <div class="meal-content" id="meal-content"></div>
+    </div>
+
+  </div>
+
+  <!-- JavaScript Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
