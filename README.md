@@ -4,7 +4,7 @@ A responsive web application to **search and discover recipes** from around the 
 
 ## Live Demo
 
-Check it out on Vercel: [Your Vercel Link Here](https://vercel.com/your-project-link)
+Check it out on Vercel: [Your Vercel Link Here](https://recipe-finder-five-flame.vercel.app/)
 
 ## Features
 
